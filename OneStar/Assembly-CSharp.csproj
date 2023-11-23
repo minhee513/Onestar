@@ -58,14 +58,14 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Dialogue.cs" />
-    <Compile Include="Assets\Script\MainGameManager.cs" />
-    <Compile Include="Assets\Script\Character.cs" />
-    <Compile Include="Assets\Script\Change.cs" />
-    <Compile Include="Assets\Script\Trailer_FadeIn.cs" />
-    <Compile Include="Assets\Script\Exit.cs" />
-    <Compile Include="Assets\Script\SetMainVolume.cs" />
-    <Compile Include="Assets\Script\TrailerDIalogue.cs" />
+    <Compile Include="Assets\Script\Prologue\Dialogue.cs" />
+    <Compile Include="Assets\Script\Prologue\TrailerDIalogue.cs" />
+    <Compile Include="Assets\Script\Main\SetMainVolume.cs" />
+    <Compile Include="Assets\Script\Day1\ImageChange.cs" />
+    <Compile Include="Assets\Script\Main\MainGameManager.cs" />
+    <Compile Include="Assets\Script\Main\Change.cs" />
+    <Compile Include="Assets\Script\Prologue\GameText.cs" />
+    <Compile Include="Assets\Script\Main\Exit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
