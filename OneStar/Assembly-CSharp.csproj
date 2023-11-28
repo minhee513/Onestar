@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Prologue\Dialogue.cs" />
+    <Compile Include="Assets\Script\Main\SoundManager.cs" />
     <Compile Include="Assets\Script\Prologue\TrailerDIalogue.cs" />
     <Compile Include="Assets\Script\Main\SetMainVolume.cs" />
     <Compile Include="Assets\Script\Day1\ImageChange.cs" />

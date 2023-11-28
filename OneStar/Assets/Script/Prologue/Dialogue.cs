@@ -1,20 +1,27 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
     public DialogueData[] dialogueDatas;    // 대사 저장 변수
     public NarrationData[] narrationDatas;  // 나레이션 저장 변수
+    public Sprite[] prologueImage;
 
+    public GameObject panel;
     public GameObject nPanel;
+    public GameObject imagePanel;
     public GameObject dPanel;   // Dialogue 패널
     public GameObject appear;   // Dialogue 패널 버튼
-    public GameObject gPanel;   // 게임 화면 패널
+    // public GameObject gPanel;   // 게임 화면 패널
 
     public TMP_Text nameText;   // 이름
     public TMP_Text dialogueText;   // 대사
+
+    int clickCnt;
+    int maxCnt;
 
     public TMP_Text narrationText;  // 나레이션
 
@@ -29,7 +36,12 @@ public class Dialogue : MonoBehaviour
         nPanel.SetActive(false);
         appear.SetActive(false);
         dPanel.SetActive(false);
-        gPanel.SetActive(false);
+        imagePanel.SetActive(false);
+        // gPanel.SetActive(false);
+
+        imagePanel.GetComponent<Image>().sprite = prologueImage[0];
+        maxCnt = prologueImage.Length - 1;
+
     }
 
     int curDialogueIdx = 0; // 대화 개수 체크
@@ -51,7 +63,9 @@ public class Dialogue : MonoBehaviour
         if (narrationDatas.Length <= curNarrationIdx)
         {
             // 대화 없음
-            appear.SetActive(true);
+            // appear.SetActive(true);
+            panel.SetActive(false);
+            imagePanel.SetActive(true);
             return;
         }
 
@@ -59,18 +73,41 @@ public class Dialogue : MonoBehaviour
         curNarrationIdx++;
     }
 
+    public void BtnClick()
+    {
+        clickCnt++;
+
+        if (clickCnt > maxCnt)
+        {
+            clickCnt = 0;
+            if (clickCnt == 0)
+            {
+                SceneManager.LoadScene(3);
+            }
+        }
+
+        imagePanel.GetComponent<Image>().sprite = prologueImage[clickCnt];
+    }
+
+    void SpriteImage()
+    {
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Prologue");
+    }
+
+    /*
     public void AppearDPanel()
     {
             nPanel.SetActive(false);
             dPanel.SetActive(true);
             NextDialogue();
     }
+    */
 
     public void NextDialogue()
     {
         if (dialogueDatas.Length <= curDialogueIdx)
         {
-            gPanel.SetActive(true);
+            // gPanel.SetActive(true);
             return;
         }
 

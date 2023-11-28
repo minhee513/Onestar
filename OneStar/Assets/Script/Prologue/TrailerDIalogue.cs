@@ -106,7 +106,7 @@ public class TrailerDialogue : MonoBehaviour
 
     public void NextScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     /*

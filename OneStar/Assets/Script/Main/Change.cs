@@ -46,7 +46,7 @@ public class Change : MonoBehaviour
     IEnumerator LoadScene() 
     {
         yield return new WaitForSeconds(0.3f); // ¾À º¯°æ Àü 0.3f µô·¹ÀÌ
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     /*

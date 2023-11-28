@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ImageChange : MonoBehaviour
 {
-    // public Sprite[] sprites;
-    // public GameObject panel;
-    // int clickCnt;
-    // int maxCnt;
+    public Sprite[] sprites;
+    public GameObject panel;
+    int clickCnt;
+    int maxCnt;
 
     void Start()
     {
-        // panel.GetComponent<Image>().sprite = sprites[0];
-        // maxCnt = sprites.Length - 1;
+        panel.GetComponent<Image>().sprite = sprites[0];
+        maxCnt = sprites.Length - 1;
     }
 
     void Update()
@@ -21,7 +22,6 @@ public class ImageChange : MonoBehaviour
         
     }
 
-    /*
     public void BtnClick()
     {
         clickCnt++;
@@ -29,19 +29,17 @@ public class ImageChange : MonoBehaviour
         if (clickCnt > maxCnt)
         {
             clickCnt = 0;
+            if (clickCnt == 0)
+            {
+                SceneManager.LoadScene(0);
+            }
         }
 
         panel.GetComponent<Image>().sprite = sprites[clickCnt];
     }
-    */
 
     void SpriteImage()
     {
         Sprite[] sprites = Resources.LoadAll<Sprite>("Day1");
-
-        if ()
-        {
-
-        }
     }
 }

@@ -361,6 +361,7 @@
 "Assets/Script/Main/Exit.cs"
 "Assets/Script/Main/MainGameManager.cs"
 "Assets/Script/Main/SetMainVolume.cs"
+"Assets/Script/Main/SoundManager.cs"
 "Assets/Script/Prologue/Dialogue.cs"
 "Assets/Script/Prologue/GameText.cs"
 "Assets/Script/Prologue/TrailerDIalogue.cs"
