@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Button1
+  - Button2
+  - Button3
+  - GameMusic
+  - TrailerPanel
   layers:
   - Default
   - TransparentFX

@@ -65,6 +65,8 @@
     <Compile Include="Assets\Script\Day1\ImageChange.cs" />
     <Compile Include="Assets\Script\Main\MainGameManager.cs" />
     <Compile Include="Assets\Script\Main\Change.cs" />
+    <Compile Include="Assets\Script\Score.cs" />
+    <Compile Include="Assets\Script\SoundTest.cs" />
     <Compile Include="Assets\Script\Prologue\GameText.cs" />
     <Compile Include="Assets\Script\Main\Exit.cs" />
   </ItemGroup>

@@ -7,15 +7,9 @@ using TMPro;
 
 public class Change : MonoBehaviour
 {
-    // public TMP_Text startBtn;
-    // Color newColor;
-    // string newColor_code;
-
     public Button startBtn; // 시작 버튼
     public GameObject inputPanel;   // 인풋필드 패널
     public InputField playerName;   // 인풋필드에서 저장할 플레이어 이름
-
-    // private string player = "이용환";
 
     private void Start()
     {
@@ -48,15 +42,4 @@ public class Change : MonoBehaviour
         yield return new WaitForSeconds(0.3f); // 씬 변경 전 0.3f 딜레이
         SceneManager.LoadScene(1);
     }
-
-    /*
-    public void ChangeBtnColor()
-    {
-        newColor_code = "#F9FF00";
-        if (ColorUtility.TryParseHtmlString(newColor_code, out newColor))
-        {
-            startBtn.color = newColor;
-        }
-    }
-    */
 }
