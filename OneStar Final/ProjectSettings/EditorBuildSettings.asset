@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Trailer.unity
+    guid: 980e3d2de5446b24fbb019748d3ff882
+  - enabled: 1
+    path: Assets/Scenes/Prologue.unity
+    guid: 50893789e73b87a4aa5847d80ce63638
+  - enabled: 1
+    path: Assets/Scenes/Day1.unity
+    guid: ad9057fc00a9d7341ae17b3cc55cdb45
+  - enabled: 1
+    path: Assets/Scenes/Day2.unity
+    guid: d00d111d1f8e8c94da26746e06305935
+  - enabled: 1
+    path: Assets/Scenes/Day3.unity
+    guid: 8f8d5aedb42a7e84595d28b93d2d2ae6
+  - enabled: 1
+    path: Assets/Scenes/Day4.unity
+    guid: 22b595488cd2c854cb07ec4697daefd2
+  - enabled: 1
+    path: Assets/Scenes/Day5.unity
+    guid: 1fd52d8f8318d54439488ebe63962db8
+  - enabled: 1
+    path: Assets/Scenes/StartMain.unity
+    guid: 941ec898371b4b840af07b193f132abf
+  - enabled: 1
+    path: Assets/Scenes/Music1.unity
+    guid: ce6a68d243ba91f43ab95216c9440748
+  - enabled: 1
+    path: Assets/Scenes/Music2.unity
+    guid: 410f3d220a9dee4429d774826ebf02e7
+  - enabled: 1
+    path: Assets/Scenes/QuizMain.unity
+    guid: 81b48b8784df03345a016e75ee72c3e5
+  - enabled: 1
+    path: Assets/Scenes/Quiz.unity
+    guid: fe44f72e6bf5c5d4dbcbe3376d65bf57
+  - enabled: 1
+    path: Assets/Scenes/QuizResult.unity
+    guid: 89a8f663dd25c8240bd298affe2b9ef2
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: b18510c2bca0f34459361d48b5c4a2a6
+  - enabled: 1
+    path: Assets/Scenes/GoodEnding.unity
+    guid: a6f5e01242eb31448af5acfcca4ac29c
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: 655040344a653fb4c9e26771984fb2ec
+  m_configObjects: {}
